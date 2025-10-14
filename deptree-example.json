@@ -1,0 +1,27 @@
+{
+	"@context": {
+		"@stemgraph": "github.com/STEMgraph#",
+		"dependsOn": {
+			"@id": "github.com/STEMgraph#dependsOn",
+			"@type:" "@id"
+		}
+	},
+	"@graph": [
+		{
+			"@id": "github.com/STEMgraph/fb98095a-0ef6-465a-886a-e8b9e3cad876",
+			"@type": "exercise",
+			"dependsOn": [
+				"github.com/STEMgraph/58818b9a-23fe-4cf2-83f4-08bc3ff1cff5",
+				"github.com/STEMgraph/a8abf235-1dcb-4234-89bd-b380e96b5378"
+			]
+		},
+		{
+			"@id": "github.com/STEMgraph/58818b9a-23fe-4cf2-83f4-08bc3ff1cff5",
+			"@type": "exercise"
+		},
+		{
+			"@id": "github.com/STEMgraph/a8abf235-1dcb-4234-89bd-b380e96b5378",
+			"@type": "exercise"
+		}
+	]
+}
