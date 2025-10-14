@@ -3,7 +3,7 @@
 		"@stemgraph": "github.com/STEMgraph#",
 		"dependsOn": {
 			"@id": "github.com/STEMgraph#dependsOn",
-			"@type:" "@id"
+			"@type": "@id"
 		}
 	},
 	"@graph": [
