@@ -1,0 +1,10 @@
+# json-ld-Datei neu starten
+echo '{
+  "@context": {
+    "STEMgraph": "https://github.com/STEMgraph/",
+    "schema": "http://schema.org/",
+    "Exercise": "schema:LearningResource",
+    "url": { "@id": "schema:url", "@type": "@id" },
+    "dependsOn": { "@id": "schema:competencyRequired", "@type": "@id" }
+  },
+  "@graph": [' > jsonld.json
