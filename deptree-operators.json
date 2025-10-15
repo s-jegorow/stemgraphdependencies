@@ -1,0 +1,69 @@
+{
+	"@context": {
+		"STEMgraph": "https://github.com/STEMgraph/",
+		"schema": "http://schema.org/",
+		"owl": "http://www.w3.org/2002/07/owl#",
+		"Exercise": "schema:LearningResource",
+		"dependsOn": "schema:competencyRequired",
+		"intersectionOf": {
+			"@id": "owl:intersectionOf",
+			"@container": "@list"
+		},
+		"unionOf": {
+			"@id": "owl:unionOf",
+			"@container": "@list"
+		}
+	},
+	"@graph": [
+		{
+			"@id": "STEMgraph:fb98095a-0ef6-465a-886a-e8b9e3cad876",
+			"@type": "Exercise",
+			"dependsOn": {
+				"intersectionOf": [
+					"STEMgraph:58818b9a-23fe-4cf2-83f4-08bc3ff1cff5",
+					"STEMgraph:a8abf235-1dcb-4234-89bd-b380e96b5378"
+				]
+			}
+		},
+		{
+			"@id": "STEMgraph:58818b9a-23fe-4cf2-83f4-08bc3ff1cff5",
+			"@type": "Exercise"
+		},
+		{
+			"@id": "STEMgraph:a8abf235-1dcb-4234-89bd-b380e96b5378",
+			"@type": "Exercise"
+		},
+		{
+			"@id": "STEMgraph:f87c7e89-ece7-4c55-af54-16a3b3b7435f",
+			"@type": "Exercise",
+			"dependsOn": {
+				"intersectionOf": [
+					"STEMgraph:302c98a7-cbea-435c-ada2-bbf7538429a2",
+					"STEMgraph:81f2e303-d35c-4857-9cb7-190e3c5372b0",
+					{
+						"unionOf": [
+							"STEMgraph:718193ef-11a1-408d-af23-4b10c24d490d",
+							"STEMgraph:99787eda-617a-4a68-b9a4-d60ec5c5c303"
+						]
+					}
+				]
+			}
+		},
+		{
+			"@id": "STEMgraph:302c98a7-cbea-435c-ada2-bbf7538429a2",
+			"@type": "Exercise"
+		},
+		{
+			"@id": "STEMgraph:81f2e303-d35c-4857-9cb7-190e3c5372b0",
+			"@type": "Exercise"
+		},
+		{
+			"@id": "STEMgraph:718193ef-11a1-408d-af23-4b10c24d490d",
+			"@type": "Exercise"
+		},
+		{
+			"@id": "STEMgraph:99787eda-617a-4a68-b9a4-d60ec5c5c303",
+			"@type": "Exercise"
+		}
+	]
+}
