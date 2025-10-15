@@ -1,0 +1,1012 @@
+{
+  "@context": {
+    "STEMgraph": "https://github.com/STEMgraph/",
+    "schema": "http://schema.org/",
+    "Exercise": "schema:LearningResource",
+    "url": { "@id": "schema:url", "@type": "@id" },
+    "dependsOn": { "@id": "schema:competencyRequired", "@type": "@id" }
+  },
+  "@graph": [
+{
+"@id": "STEMgraph:b3531ed1-472f-4448-b60b-c58b9671a0a2",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:c32afdd3-48c3-4ff2-b5f7-a2179a2f8093"
+]
+}
+,
+{
+"@id": "STEMgraph:c32afdd3-48c3-4ff2-b5f7-a2179a2f8093",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:df08f299-5635-4e4d-8af1-6323bcf4a828",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:0b6b3ce8-418e-4900-ae42-a6d068389a12"
+]
+}
+,
+{
+"@id": "STEMgraph:29552b11-ae05-483a-9909-2984bfb66ad3",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:56e4d8fa-8d84-405d-b816-62ad9d3973db"
+]
+}
+,
+{
+"@id": "STEMgraph:56e4d8fa-8d84-405d-b816-62ad9d3973db",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:b3531ed1-472f-4448-b60b-c58b9671a0a2"
+]
+}
+,
+{
+"@id": "STEMgraph:2263c4f5-5034-48fa-beef-3d204473069c",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:5adc24d3-4054-453e-80dd-30a820be8ed3"
+]
+}
+,
+{
+"@id": "STEMgraph:9264c227-8d04-4a33-bbc7-df86ba0e9a5a",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:a29aa0d7-e54c-4927-a4cc-0cd84f3b1032"
+]
+}
+,
+{
+"@id": "STEMgraph:5adc24d3-4054-453e-80dd-30a820be8ed3",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:0b6b3ce8-418e-4900-ae42-a6d068389a12"
+]
+}
+,
+{
+"@id": "STEMgraph:a29aa0d7-e54c-4927-a4cc-0cd84f3b1032",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:6e50613d-60e2-40a8-91ae-609e0721f613"
+]
+}
+,
+{
+"@id": "STEMgraph:0b6b3ce8-418e-4900-ae42-a6d068389a12",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:e954e47f-3d9d-4707-bea3-1ef3105278f4",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:f09fc4fb-82e5-42a9-837f-9e73c2d2c890",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:cc424af3-2bd7-491f-b678-89e18904bf58",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:61354751-6887-4761-9ef0-ca25d237cf1c",
+"STEMgraph:800c7dd9-5ccf-42c1-b9ea-c2764579cf5d"
+]
+}
+,
+{
+"@id": "STEMgraph:800c7dd9-5ccf-42c1-b9ea-c2764579cf5d",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:718193ef-11a1-408d-af23-4b10c24d490d"
+]
+}
+,
+{
+"@id": "STEMgraph:ef194da4-9d0f-45a3-baf8-bfac82efd0a8",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:800c7dd9-5ccf-42c1-b9ea-c2764579cf5d",
+"STEMgraph:cc424af3-2bd7-491f-b678-89e18904bf58"
+]
+}
+,
+{
+"@id": "STEMgraph:c64df047-9993-4aa8-9dc7-dc712125910e",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:68ffd195-2ba7-4267-a939-e0bddcf0d01d",
+"STEMgraph:f87c7e89-ece7-4c55-af54-16a3b3b7435f"
+]
+}
+,
+{
+"@id": "STEMgraph:68ffd195-2ba7-4267-a939-e0bddcf0d01d",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:800c7dd9-5ccf-42c1-b9ea-c2764579cf5d"
+]
+}
+,
+{
+"@id": "STEMgraph:66726805-4497-4dce-a1ba-ccf930a721f8",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:00650b50-14de-471d-a347-246f47ffadde",
+"STEMgraph:05894bad-a8de-413a-86ce-166579682bbc"
+]
+}
+,
+{
+"@id": "STEMgraph:25eed4ab-4d42-4ce3-866d-dc2992f713a9",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:66726805-4497-4dce-a1ba-ccf930a721f8"
+]
+}
+,
+{
+"@id": "STEMgraph:04c71741-b965-41c0-936d-62f513e73df6",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:293aa994-02be-42eb-8859-f7e21029a875"
+]
+}
+,
+{
+"@id": "STEMgraph:6e50613d-60e2-40a8-91ae-609e0721f613",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:81f2e303-d35c-4857-9cb7-190e3c5372b0"
+]
+}
+,
+{
+"@id": "STEMgraph:f87c7e89-ece7-4c55-af54-16a3b3b7435f",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:302c98a7-cbea-435c-ada2-bbf7538429a2",
+"STEMgraph:81f2e303-d35c-4857-9cb7-190e3c5372b0",
+"STEMgraph:718193ef-11a1-408d-af23-4b10c24d490d",
+"STEMgraph:99787eda-617a-4a68-b9a4-d60ec5c5c303"
+]
+}
+,
+{
+"@id": "STEMgraph:9c731ef8-b682-470f-bcd5-e22dca5d6b0a",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:93b1742d-4a11-4390-a6c4-2818f3de569e",
+"STEMgraph:fcef696e-079c-4d83-b611-7b378bb8ac07",
+"STEMgraph:7f50ba23-f5a6-4bc7-887f-ed9247220544"
+]
+}
+,
+{
+"@id": "STEMgraph:93b1742d-4a11-4390-a6c4-2818f3de569e",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:293aa994-02be-42eb-8859-f7e21029a875"
+]
+}
+,
+{
+"@id": "STEMgraph:72dca6d2-6c2d-46be-aaa1-666a80a313f9",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:293aa994-02be-42eb-8859-f7e21029a875",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:ec2d7d19-c8cc-423a-874c-eeacf71d7ab6"
+]
+}
+,
+{
+"@id": "STEMgraph:cdd6a16c-90a8-4192-9cc3-9a3f8c6a39eb",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:5b3eacb4-79f5-40cf-8c73-3dcbbd5f8f89"
+]
+}
+,
+{
+"@id": "STEMgraph:ec2d7d19-c8cc-423a-874c-eeacf71d7ab6",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:2c7334b3-b07d-48d6-a562-79072d8e166e"
+]
+}
+,
+{
+"@id": "STEMgraph:db286852-f2d2-4593-adc1-6682f352cd4f",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:66726805-4497-4dce-a1ba-ccf930a721f8",
+"STEMgraph:11830a64-a50f-461e-8379-ae9511768cc4",
+"STEMgraph:2d349b37-ef59-4353-87e2-33896c7d0064",
+"STEMgraph:fc36b61a-a948-4971-87b1-dcf98a1c5d80",
+"STEMgraph:71450eb9-b69b-45e9-8a43-8bc0fae963d1"
+]
+}
+,
+{
+"@id": "STEMgraph:8acee03e-6020-4e3b-86b7-d7747b216258",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:b668e389-98db-4777-bc4c-190de535836c"
+]
+}
+,
+{
+"@id": "STEMgraph:bae22056-8b3c-4c71-807d-68abc7171b36",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:e8add8e9-7a67-4b50-af89-6c1ce6558e0d"
+]
+}
+,
+{
+"@id": "STEMgraph:b668e389-98db-4777-bc4c-190de535836c",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:e46ffb8b-00d6-44a2-ad40-552ea03b4e3a"
+]
+}
+,
+{
+"@id": "STEMgraph:05894bad-a8de-413a-86ce-166579682bbc",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:bae22056-8b3c-4c71-807d-68abc7171b36",
+"STEMgraph:8acee03e-6020-4e3b-86b7-d7747b216258",
+"STEMgraph:b668e389-98db-4777-bc4c-190de535836c",
+"STEMgraph:e8add8e9-7a67-4b50-af89-6c1ce6558e0d"
+]
+}
+,
+{
+"@id": "STEMgraph:11830a64-a50f-461e-8379-ae9511768cc4",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:00650b50-14de-471d-a347-246f47ffadde"
+]
+}
+,
+{
+"@id": "STEMgraph:2d349b37-ef59-4353-87e2-33896c7d0064",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:00650b50-14de-471d-a347-246f47ffadde"
+]
+}
+,
+{
+"@id": "STEMgraph:fc36b61a-a948-4971-87b1-dcf98a1c5d80",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:00650b50-14de-471d-a347-246f47ffadde"
+]
+}
+,
+{
+"@id": "STEMgraph:71450eb9-b69b-45e9-8a43-8bc0fae963d1",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:00650b50-14de-471d-a347-246f47ffadde"
+]
+}
+,
+{
+"@id": "STEMgraph:322ab4aa-737e-4265-83b1-614c893b3753",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:d1bee1c7-d88a-4f00-a44e-3e402f6ee826"
+]
+}
+,
+{
+"@id": "STEMgraph:186f282c-fe31-4ce9-85eb-6cf61007b610",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:d1bee1c7-d88a-4f00-a44e-3e402f6ee826"
+]
+}
+,
+{
+"@id": "STEMgraph:8bf8a579-c196-4be2-8405-5935123fe66f",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:d1bee1c7-d88a-4f00-a44e-3e402f6ee826"
+]
+}
+,
+{
+"@id": "STEMgraph:fb98095a-0ef6-465a-886a-e8b9e3cad876",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:58818b9a-23fe-4cf2-83f4-08bc3ff1cff5",
+"STEMgraph:a8abf235-1dcb-4234-89bd-b380e96b5378"
+]
+}
+,
+{
+"@id": "STEMgraph:58818b9a-23fe-4cf2-83f4-08bc3ff1cff5",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:e2c108ad-125e-45ac-8fe1-d2e3b13f48eb",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:a8abf235-1dcb-4234-89bd-b380e96b5378",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:abe720ad-32b4-4303-9b61-5875f592c05c"
+]
+}
+,
+{
+"@id": "STEMgraph:abe720ad-32b4-4303-9b61-5875f592c05c",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:02b2f58b-5bbf-4314-966a-bbd25faa9450",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:a0f6c77d-9645-4e6c-80dc-a80608786266"
+]
+}
+,
+{
+"@id": "STEMgraph:9a437897-663d-442b-82bd-f34643db7e4e",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:556cc1c6-a1f0-4008-8a6c-20707bfdd1e8",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:da751de6-10d3-4770-a4d3-359f08bc6631",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:474307f2-a30c-4639-9379-298bf1a4c00b",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:a153b035-9e3f-400a-adf8-9934a8887593",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:2c7334b3-b07d-48d6-a562-79072d8e166e",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:b9e0a0a7-cce1-4d14-ae1c-5f8f57472c46",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:8c79cd1f-f6bd-4930-b62c-b2970c412735",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:68d6f0e5-dff5-453e-a1e4-9df3d3fc7d89",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:fa0f19fa-c579-4183-9496-0eaa4251dfd4",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:a2596a91-c7de-477a-bfbb-b08867f1aa89"
+]
+}
+,
+{
+"@id": "STEMgraph:6f3fd64c-8750-4a79-82b7-43b420fb42d4",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:cdd3d87d-0e87-4a00-a676-83ca9f245bd7"
+]
+}
+,
+{
+"@id": "STEMgraph:2f4d1f4f-a53b-485e-a290-2da6b69353b2",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:61354751-6887-4761-9ef0-ca25d237cf1c",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:fcef696e-079c-4d83-b611-7b378bb8ac07",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:077e7849-3a02-4e7d-bdc9-c7ad443784fd",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:cdd3d87d-0e87-4a00-a676-83ca9f245bd7",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:a2596a91-c7de-477a-bfbb-b08867f1aa89"
+]
+}
+,
+{
+"@id": "STEMgraph:a2596a91-c7de-477a-bfbb-b08867f1aa89",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:3b947ad2-5b1c-493b-ad08-364a61d5e6c0",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:d1bee1c7-d88a-4f00-a44e-3e402f6ee826"
+]
+}
+,
+{
+"@id": "STEMgraph:d1bee1c7-d88a-4f00-a44e-3e402f6ee826",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:21351032-2a40-4101-8c29-513fdaf37365"
+]
+}
+,
+{
+"@id": "STEMgraph:21351032-2a40-4101-8c29-513fdaf37365",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:24b25804-5bb5-443f-a78a-1bd485bebed8"
+]
+}
+,
+{
+"@id": "STEMgraph:f46a35bf-69f3-4385-ab0c-b23074589a35",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:7130a694-458e-4e24-80b7-d8673f765e69"
+]
+}
+,
+{
+"@id": "STEMgraph:1b40b633-75bc-41c4-be3c-a7f9b5e8d40b",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:24b25804-5bb5-443f-a78a-1bd485bebed8",
+"STEMgraph:2d1d315d-bb92-48c0-b19f-19529a45e5ff"
+]
+}
+,
+{
+"@id": "STEMgraph:24b25804-5bb5-443f-a78a-1bd485bebed8",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:fcef696e-079c-4d83-b611-7b378bb8ac07"
+]
+}
+,
+{
+"@id": "STEMgraph:d58d972d-7730-4b1c-8ec2-a8288ef0ed05",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:e8add8e9-7a67-4b50-af89-6c1ce6558e0d"
+]
+}
+,
+{
+"@id": "STEMgraph:6908d646-c436-4cc7-8a4a-1f742f8a0533",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:e3a451cf-dccf-474b-97d2-17505e309ba0"
+]
+}
+,
+{
+"@id": "STEMgraph:80411ccb-b484-451e-a3c1-5c8c9e626937",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:7f50ba23-f5a6-4bc7-887f-ed9247220544",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:3193c311-8662-4aed-a77a-d595bbf1c1e4",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:c8353038-9b0b-4ff5-b872-7df816d31fc3",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:e8add8e9-7a67-4b50-af89-6c1ce6558e0d"
+]
+}
+,
+{
+"@id": "STEMgraph:602e52e7-553e-40a0-a6f6-3ea0c4768835",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:b9e34253-61e2-4fb7-bd36-388c370fa765"
+]
+}
+,
+{
+"@id": "STEMgraph:ae09827a-4af8-4d4f-bf38-582731a2f110",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:a4b0b901-5c73-48b4-9eb8-5cedc4d8c67b",
+"STEMgraph:c1f2cd2b-3ffc-44a8-86b1-111f9d246c10",
+"STEMgraph:e8add8e9-7a67-4b50-af89-6c1ce6558e0d"
+]
+}
+,
+{
+"@id": "STEMgraph:a4b0b901-5c73-48b4-9eb8-5cedc4d8c67b",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:a0f6c77d-9645-4e6c-80dc-a80608786266",
+"STEMgraph:2d1d315d-bb92-48c0-b19f-19529a45e5ff",
+"STEMgraph:b9e34253-61e2-4fb7-bd36-388c370fa765"
+]
+}
+,
+{
+"@id": "STEMgraph:f81d1db6-ad8e-42ff-916c-157049d29292",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:b9e34253-61e2-4fb7-bd36-388c370fa765"
+]
+}
+,
+{
+"@id": "STEMgraph:b9e34253-61e2-4fb7-bd36-388c370fa765",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:02a2b4e3-d265-4810-a886-fc403e7ebf86",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:35eb6085-0a91-4740-a611-b7f7077e91fc",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:00650b50-14de-471d-a347-246f47ffadde",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:2c7334b3-b07d-48d6-a562-79072d8e166e"
+]
+}
+,
+{
+"@id": "STEMgraph:b1d02de5-2283-4672-bcbf-a4c81fcad440",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:1f867627-725b-40f7-9ecd-d1072c941367"
+]
+}
+,
+{
+"@id": "STEMgraph:1f867627-725b-40f7-9ecd-d1072c941367",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:3ee0acd9-0f99-4423-b4f3-a0ca84a16422"
+]
+}
+,
+{
+"@id": "STEMgraph:f67933c1-9705-4f35-9b77-821767fa8135",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:3ee0acd9-0f99-4423-b4f3-a0ca84a16422"
+]
+}
+,
+{
+"@id": "STEMgraph:a0f6c77d-9645-4e6c-80dc-a80608786266",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:3ee0acd9-0f99-4423-b4f3-a0ca84a16422",
+"STEMgraph:7130a694-458e-4e24-80b7-d8673f765e69"
+]
+}
+,
+{
+"@id": "STEMgraph:77bccff1-2503-4d3c-8964-6f717ea89b57",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:3ee0acd9-0f99-4423-b4f3-a0ca84a16422"
+]
+}
+,
+{
+"@id": "STEMgraph:00f91b51-4e5d-4e2f-9acd-be120706958e",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:3ee0acd9-0f99-4423-b4f3-a0ca84a16422"
+]
+}
+,
+{
+"@id": "STEMgraph:3ee0acd9-0f99-4423-b4f3-a0ca84a16422",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:2c7334b3-b07d-48d6-a562-79072d8e166e"
+]
+}
+,
+{
+"@id": "STEMgraph:301394c2-6efb-4677-aaff-47091fb8145d",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:8c79cd1f-f6bd-4930-b62c-b2970c412735"
+]
+}
+,
+{
+"@id": "STEMgraph:9c17f900-f66c-44e6-9761-fcfba8a2f87d",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:3c36ced7-500a-4abe-91ad-b8820b79f1f8",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:415e5347-4933-4423-abe7-57a233963f22",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:4b38b73a-de15-4349-8438-d6c2f5eab6f5",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:c1f2cd2b-3ffc-44a8-86b1-111f9d246c10",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:a0f6c77d-9645-4e6c-80dc-a80608786266",
+"STEMgraph:2d1d315d-bb92-48c0-b19f-19529a45e5ff"
+]
+}
+,
+{
+"@id": "STEMgraph:e8add8e9-7a67-4b50-af89-6c1ce6558e0d",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:e46ffb8b-00d6-44a2-ad40-552ea03b4e3a"
+]
+}
+,
+{
+"@id": "STEMgraph:2d1d315d-bb92-48c0-b19f-19529a45e5ff",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:7130a694-458e-4e24-80b7-d8673f765e69"
+]
+}
+,
+{
+"@id": "STEMgraph:7130a694-458e-4e24-80b7-d8673f765e69",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:5ae3c504-9947-49d3-9dd5-1ac6f9b22a7b",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:302c98a7-cbea-435c-ada2-bbf7538429a2"
+]
+}
+,
+{
+"@id": "STEMgraph:c2493cfd-4afb-4045-8c57-726cc9486f77",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:718193ef-11a1-408d-af23-4b10c24d490d",
+"STEMgraph:99787eda-617a-4a68-b9a4-d60ec5c5c303"
+]
+}
+,
+{
+"@id": "STEMgraph:0083b38f-6e8d-492c-975d-25f21e1856ec",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:0b6b3ce8-418e-4900-ae42-a6d068389a12"
+]
+}
+,
+{
+"@id": "STEMgraph:302c98a7-cbea-435c-ada2-bbf7538429a2",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:718193ef-11a1-408d-af23-4b10c24d490d",
+"STEMgraph:99787eda-617a-4a68-b9a4-d60ec5c5c303"
+]
+}
+,
+{
+"@id": "STEMgraph:81f2e303-d35c-4857-9cb7-190e3c5372b0",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:718193ef-11a1-408d-af23-4b10c24d490d",
+"STEMgraph:99787eda-617a-4a68-b9a4-d60ec5c5c303",
+"STEMgraph:302c98a7-cbea-435c-ada2-bbf7538429a2"
+]
+}
+,
+{
+"@id": "STEMgraph:722698f1-d030-4813-ab8a-b9fd0c92bf27",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:650920e2-edbe-4dc5-8a0c-96e7d76344e3",
+"STEMgraph:75f53c25-f20f-4dfd-b5c4-9251c83d64be"
+]
+}
+,
+{
+"@id": "STEMgraph:75f53c25-f20f-4dfd-b5c4-9251c83d64be",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:7d3bb490-8826-464b-9e97-1f7703b2e40b",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:60b25ba1-4dd1-4ab9-a0b4-95408b08f6dc"
+]
+}
+,
+{
+"@id": "STEMgraph:60b25ba1-4dd1-4ab9-a0b4-95408b08f6dc",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:f2941e97-8d49-4c6a-93e1-c72f384e1cbe",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:2f4d1f4f-a53b-485e-a290-2da6b69353b2"
+]
+}
+,
+{
+"@id": "STEMgraph:d23d274a-248e-448e-87d2-1ccba2183f4c",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:718193ef-11a1-408d-af23-4b10c24d490d",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:e3a451cf-dccf-474b-97d2-17505e309ba0",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:718193ef-11a1-408d-af23-4b10c24d490d"
+]
+}
+,
+{
+"@id": "STEMgraph:e7792ebe-224a-42c0-82ca-b1150127082c",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:862f9d0d-6ee1-4746-9988-e7cd0efc1c56"
+]
+}
+,
+{
+"@id": "STEMgraph:4b957490-badf-4264-b9f2-1b5aa370f36e",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:9a437897-663d-442b-82bd-f34643db7e4e"
+]
+}
+,
+{
+"@id": "STEMgraph:650920e2-edbe-4dc5-8a0c-96e7d76344e3",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:474307f2-a30c-4639-9379-298bf1a4c00b"
+]
+}
+,
+{
+"@id": "STEMgraph:be5c2a4a-756f-4303-961c-e616e0cdab11",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:c25a4d2d-dd76-4b3c-868f-aaef175c0f89",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:341f55bf-db2f-4c98-b7c1-b6b3e6b75ddb",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:e46ffb8b-00d6-44a2-ad40-552ea03b4e3a"
+]
+}
+,
+{
+"@id": "STEMgraph:862f9d0d-6ee1-4746-9988-e7cd0efc1c56",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:8d3e51c2-4811-4275-976c-04e3b3215998"
+]
+}
+,
+{
+"@id": "STEMgraph:e46ffb8b-00d6-44a2-ad40-552ea03b4e3a",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:fe5d5ad9-cb98-473c-a8ba-606291151080",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:116c995e-c4b7-40f5-b84f-068474bbb87c"
+]
+}
+,
+{
+"@id": "STEMgraph:116c995e-c4b7-40f5-b84f-068474bbb87c",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:99787eda-617a-4a68-b9a4-d60ec5c5c303"
+]
+}
+,
+{
+"@id": "STEMgraph:99787eda-617a-4a68-b9a4-d60ec5c5c303",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:8d3e51c2-4811-4275-976c-04e3b3215998",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:1bab3b9e-6928-493a-acbc-e28b33ded429",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:279a01d6-7696-46b7-9cb7-2c44773ad06b",
+"STEMgraph:845d15ed-1fb2-4b2c-8096-732f29e01c93"
+]
+}
+,
+{
+"@id": "STEMgraph:845d15ed-1fb2-4b2c-8096-732f29e01c93",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:1394df5e-2528-4670-9398-208071d70c1b"
+]
+}
+,
+{
+"@id": "STEMgraph:1394df5e-2528-4670-9398-208071d70c1b",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:279a01d6-7696-46b7-9cb7-2c44773ad06b"
+]
+}
+,
+{
+"@id": "STEMgraph:279a01d6-7696-46b7-9cb7-2c44773ad06b",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:a2596a91-c7de-477a-bfbb-b08867f1aa89"
+]
+}
+,
+{
+"@id": "STEMgraph:b6701722-9f1e-4fbb-9e1b-6f2dd389f179",
+"@type": "Exercise",
+"dependsOn": [
+"STEMgraph:8fd3f76a-24d1-460b-9f88-9ff63809e8f5"
+]
+}
+,
+{
+"@id": "STEMgraph:8fd3f76a-24d1-460b-9f88-9ff63809e8f5",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:0508295d-de49-4a67-8113-efebffc62d96",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:bd1f3943-c439-497a-a6a9-513c6ed7ce80",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+{
+"@id": "STEMgraph:2ba87074-5f0a-4949-a25c-a34ab7fcce1e",
+"@type": "Exercise",
+"dependsOn": []
+}
+,
+]}
