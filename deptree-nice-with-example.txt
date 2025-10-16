@@ -1,3 +1,30 @@
+Metadata from https://github.com/STEMgraph/f87c7e89-ece7-4c55-af54-16a3b3b7435f/:
+
+<!---
+{
+  "id": "f87c7e89-ece7-4c55-af54-16a3b3b7435f",
+  "depends_on": [
+    "AND",
+    "302c98a7-cbea-435c-ada2-bbf7538429a2",
+    "81f2e303-d35c-4857-9cb7-190e3c5372b0",
+    [
+      "OR",
+      "718193ef-11a1-408d-af23-4b10c24d490d", 
+      "99787eda-617a-4a68-b9a4-d60ec5c5c303"  
+    ]
+  ],
+  "author": "Stephan Bökelmann",
+  "first_used": "2025-06-05",
+  "keywords": ["C Compiler", "Inline Assembly", "Syscall", "Objdump", "Locals and Globals", "Primitive Types"]
+}
+--->
+
+
+---
+JSON-LD:
+("@type": "owl:Class" may change in future versions.)
+
+
 {
 	"@context": {
 		"schema": "http://schema.org/",
