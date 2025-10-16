@@ -6,33 +6,26 @@ echo "STEMgraph repo list saved as ./repolist.txt.tmp"
 
 # create JSON-LD header 
 cat > jsonld.tmp <<'EOF'
-
- {
-	"@context": {
-		"schema": "http://schema.org/",
-		"Exercise": "schema:LearningResource",
-		"dependsOn": {
-			"@id": "schema:competencyRequired",
-			"@type": "@id"
-		},
-		"owl": "http://www.w3.org/2002/07/owl#",
-		"intersectionOf": {
-			"@id": "owl:intersectionOf",
-			"@type": "@vocab"
-		},
-		"unionOf": {
-			"@id": "owl:unionOf",
-			"@type": "@vocab"
-		},
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"label": "rdfs:label",
-		"STEMgraph": "https://github.com/STEMgraph/",
-		"LogicNode": "STEMgraph:LogicNode",
-		"logicType": "STEMgraph:logicType",
-		"AND": "STEMgraph:AND",
-		"OR": "STEMgraph:OR"
-	},
-	"@graph": [
+{
+  "@context": {
+    "STEMgraph": "https://github.com/STEMgraph/",
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "Exercise": "schema:LearningResource",
+    "dependsOn": {
+      "@id": "schema:competencyRequired",
+      "@type": "@id"
+    },
+    "intersectionOf": {
+      "@id": "owl:intersectionOf",
+      "@type": "@vocab"
+    },
+    "unionOf": {
+      "@id": "owl:unionOf",
+      "@type": "@vocab"
+    }
+  },
+  "@graph": [
 EOF
 
 echo "jsonld.tmp file created with header"
@@ -85,9 +78,7 @@ while read -r p; do
               ref: ("STEMgraph:" + $id),
               nodes: (($processed | map(.nodes) | add) + [{
                 ("@id"): ("STEMgraph:" + $id),
-                ("@type"): ["owl:Class", "LogicNode"],
-                label: $op,
-                logicType: ("STEMgraph:" + $op),
+                ("@type"): "owl:Class",
                 (if $op == "AND" then "intersectionOf" else "unionOf" end): ($processed | map(.ref))
               }])
             }
@@ -99,9 +90,7 @@ while read -r p; do
               ref: ("STEMgraph:" + $id),
               nodes: (($processed | map(.nodes) | add) + [{
                 ("@id"): ("STEMgraph:" + $id),
-                ("@type"): ["owl:Class", "LogicNode"],
-                label: "AND",
-                logicType: "STEMgraph:AND",
+                ("@type"): "owl:Class",
                 intersectionOf: ($processed | map(.ref))
               }])
             }
@@ -142,11 +131,9 @@ fi
 echo '  ]
 }' >> jsonld.tmp
 
-# Sloppy Workarounds 
-# 1.) OR prefix in IDs (sed removes first letter, causing -R- instead of -OR-)
+# Sloppy Workarounds 1.) OR prefix in IDs (sed removes first letter, causing -R- instead of -OR-)
 sed -i 's/-R-/-OR-/g' jsonld.tmp
-# 2.) Merge duplicate Exercise entries with different dependsOn properties
-jq '.["@graph"] |= (group_by(."@id") | map(if length > 1 then add else .[0] end))' jsonld.tmp > jsonld.json
 
-echo "JSON-LD generated: ./jsonld.json"
+echo "JSON-LD generated: ./jsonld.tmp"
+cp jsonld.tmp jsonld.json
 rm *.tmp

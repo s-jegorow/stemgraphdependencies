@@ -1,0 +1,6 @@
+{"@id":"STEMgraph:3b947ad2-5b1c-493b-ad08-364a61d5e6c0","@type":"Exercise","dependsOn":"STEMgraph:d1bee1c7-d88a-4f00-a44e-3e402f6ee826"},
+{"@id":"STEMgraph:d1bee1c7-d88a-4f00-a44e-3e402f6ee826","@type":"Exercise"},
+{"@id":"STEMgraph:d1bee1c7-d88a-4f00-a44e-3e402f6ee826","@type":"Exercise","dependsOn":"STEMgraph:21351032-2a40-4101-8c29-513fdaf37365"},
+{"@id":"STEMgraph:81f2e303-d35c-4857-9cb7-190e3c5372b0","@type":"Exercise"},
+ 69 {"@id":"STEMgraph:f87c7e89-ece7-4c55-af54-16a3b3b7435f","@type":"Exercise","dependsOn":"STEMgraph:AND-02c98a7-cbea-435c-ada2-bbf7538429a2-1f2e303-d35c-4857-9cb7-190e3c5372b0-R-18193ef-11a1-408d-af23-4b10c24d4    90d-9787eda-617a-4a68-b9a4-d60ec5c5c303"},
+ 70 {
