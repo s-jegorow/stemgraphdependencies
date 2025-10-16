@@ -15,7 +15,13 @@
 			"@id": "owl:unionOf",
 			"@type": "@vocab"
 		},
-		"STEMgraph": "https://github.com/STEMgraph/"
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"label": "rdfs:label",
+		"STEMgraph": "https://github.com/STEMgraph/",
+		"LogicNode": "STEMgraph:LogicNode",
+		"logicType": "STEMgraph:logicType",
+		"AND": "STEMgraph:AND",
+		"OR": "STEMgraph:OR"
 	},
 	"@graph": [
 		{
@@ -25,7 +31,12 @@
 		},
 		{
 			"@id": "STEMgraph:AND-58818b9a-a8abf235",
-			"@type": "owl:Class",
+			"@type": [
+				"owl:Class",
+				"LogicNode"
+			],
+			"label": "AND",
+			"logicType": "STEMgraph:AND",
 			"intersectionOf": [
 				"STEMgraph:58818b9a-23fe-4cf2-83f4-08bc3ff1cff5",
 				"STEMgraph:a8abf235-1dcb-4234-89bd-b380e96b5378"
@@ -46,7 +57,12 @@
 		},
 		{
 			"@id": "STEMgraph:AND-302c98a7-81f2e303-OR-718193ef-99787eda",
-			"@type": "owl:Class",
+			"@type": [
+				"owl:Class",
+				"LogicNode"
+			],
+			"label": "AND",
+			"logicType": "STEMgraph:AND",
 			"intersectionOf": [
 				"STEMgraph:302c98a7-cbea-435c-ada2-bbf7538429a2",
 				"STEMgraph:81f2e303-d35c-4857-9cb7-190e3c5372b0",
@@ -55,7 +71,12 @@
 		},
 		{
 			"@id": "STEMgraph:OR-718193ef-99787eda",
-			"@type": "owl:Class",
+			"@type": [
+				"owl:Class",
+				"LogicNode"
+			],
+			"label": "OR",
+			"logicType": "STEMgraph:OR",
 			"unionOf": [
 				"STEMgraph:718193ef-11a1-408d-af23-4b10c24d490d",
 				"STEMgraph:99787eda-617a-4a68-b9a4-d60ec5c5c303"
