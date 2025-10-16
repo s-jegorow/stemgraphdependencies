@@ -6,7 +6,6 @@ echo "STEMgraph repo list saved as ./repolist.txt.tmp"
 
 # create JSON-LD header 
 cat > jsonld.tmp <<'EOF'
-
  {
 	"@context": {
 		"schema": "http://schema.org/",
@@ -41,17 +40,16 @@ echo "jsonld.tmp file created with header"
 echo "getting and decoding README.md files from Repolist"
 
 while read -r p; do
-  if gh api /repos/STEMgraph/"$p"/contents/README.md --jq '.content' 2>/dev/null | base64 -d > README.tmp; then
-
+  gh api /repos/STEMgraph/"$p"/contents/README.md --jq '.content' 2>/dev/null | base64 -d > README.tmp && {
+    
     # Extract JSON: remove HTML comments, take first 50 lines, validate with jq
     meta=$(sed 's/<!---//g; s/--->//g' README.tmp | head -50 | jq -c '.' 2>/dev/null)
     
     # Process if valid JSON with id field
-    if [ -n "$meta" ] && echo "$meta" | jq -e '.id' >/dev/null 2>&1; then
-      printf '%s\n' "$meta" >> metadata_dump.json.tmp
-
+    if echo "$meta" | jq -e '.id' >/dev/null 2>&1; then
+      
       # Generate all nodes from metadata and append directly to deps file
-      printf '%s\n' "$meta" | jq -c --arg repo "$p" '
+      echo "$meta" | jq -c --arg repo "$p" '
         def normalize:
           if type == "string" then
             if test("^STEMgraph:") then .
@@ -124,19 +122,14 @@ while read -r p; do
         end
       ' >> deps.txt.tmp
     fi
-  fi
+  }
 done < repolist.txt.tmp
 
 # Finalize JSON-LD
 echo "Finishing the jsonld.tmp file"
 if [ -s deps.txt.tmp ]; then
-  # Remove duplicates while preserving order, add commas
- sort -u deps.txt.tmp | sed 's/$/,/' > deps_dedup.txt.tmp
-
-  # Add all but last line
-  head -n -1 deps_dedup.txt.tmp >> jsonld.tmp
-  # Add last line without comma
-  tail -n 1 deps_dedup.txt.tmp | sed 's/,$//' >> jsonld.tmp
+  # Remove duplicates, add commas, and append to jsonld
+  sort -u deps.txt.tmp | sed 's/$/,/' | sed '$s/,$//' >> jsonld.tmp
 fi
 
 echo '  ]
