@@ -24,7 +24,7 @@ Outputs: `jsonld.json`
 
 
 ## Future plans
-
+- add labels and titles to the nodes
 - Mermaid diagram generation
 - Other visualization formats
 
