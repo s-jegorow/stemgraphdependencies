@@ -10,7 +10,7 @@ Parses all STEMgraph repositories and generates a JSON-LD dependency graph.
 ## Usage
 
 ```bash
-./ison-parser.sh
+./json-parser.sh
 ```
 
 Outputs: `jsonld.json`
