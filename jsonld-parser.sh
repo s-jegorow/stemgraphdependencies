@@ -40,13 +40,13 @@ echo "jsonld.tmp file created with header"
 echo "getting and decoding README.md files from Repolist"
 
 while read -r p; do
-  gh api /repos/STEMgraph/"$p"/contents/README.md --jq '.content' 2>/dev/null | base64 -d > README.tmp && {
+  if gh api /repos/STEMgraph/"$p"/contents/README.md --jq '.content' 2>/dev/null | base64 -d > README.tmp; then
     
-# Extract JSON: remove HTML comments, take first 50 lines, validate with jq
-meta=$(sed 's/<!---//g; s/--->//g' README.tmp | head -50 | jq -c '.' 2>/dev/null)
+    # Extract JSON: remove HTML comments, take first 50 lines, validate with jq
+    meta=$(sed 's/<!---//g; s/--->//g' README.tmp | head -50 | jq -c '.' 2>/dev/null)
     
-# Process if valid JSON with id field
-if echo "$meta" | jq -e '.id' >/dev/null 2>&1; then
+    # Process if valid JSON with id field
+    if echo "$meta" | jq -e '.id' >/dev/null 2>&1; then
       
       # Generate all nodes from metadata and append directly to deps file
       echo "$meta" | jq -c --arg repo "$p" '
@@ -122,19 +122,23 @@ if echo "$meta" | jq -e '.id' >/dev/null 2>&1; then
         end
       ' >> deps.txt.tmp
     fi
-  }
+  else
+    echo "$p" >> no_readme.txt
+  fi
 done < repolist.txt.tmp
 
 # Finalize JSON-LD
 echo "Finishing the jsonld.tmp file"
-# Remove duplicates, add commas, and append to jsonld
-sort -u deps.txt.tmp | sed 's/$/,/' | sed '$s/,$//' >> jsonld.tmp
+if [ -s deps.txt.tmp ]; then
+  # Remove duplicates, add commas, and append to jsonld
+  sort -u deps.txt.tmp | sed 's/$/,/' | sed '$s/,$//' >> jsonld.tmp
+fi
 
 echo '  ]
 }' >> jsonld.tmp
 
 # Sloppy Workarounds 
-# 1.) OR prefix in IDs (sed removes first letter, -R- for -OR- fix)
+# 1.) OR prefix in IDs (sed removes first letter, causing -R- instead of -OR-)
 sed -i 's/-R-/-OR-/g' jsonld.tmp
 # 2.) Merge duplicate Exercise entries with different dependsOn properties
 jq '.["@graph"] |= (group_by(."@id") | map(if length > 1 then add else .[0] end))' jsonld.tmp > jsonld.json
