@@ -26,7 +26,7 @@
 	"@graph": [
 		{
 			"@id": "STEMgraph:fb98095a-0ef6-465a-886a-e8b9e3cad876",
-			"@type": "Exercise",
+			"label": "Color Picker with Lambda Function",
 			"dependsOn": "STEMgraph:AND-58818b9a-a8abf235"
 		},
 		{
@@ -44,15 +44,18 @@
 		},
 		{
 			"@id": "STEMgraph:58818b9a-23fe-4cf2-83f4-08bc3ff1cff5",
-			"@type": "Exercise"
+			"@type": "Exercise",
+			"label": "Exploring C++ Lambda Expressions"
 		},
 		{
 			"@id": "STEMgraph:a8abf235-1dcb-4234-89bd-b380e96b5378",
-			"@type": "Exercise"
+			"@type": "Exercise",
+			"label": "A minimal CopperSpice Example"
 		},
 		{
 			"@id": "STEMgraph:f87c7e89-ece7-4c55-af54-16a3b3b7435f",
 			"@type": "Exercise",
+			"label": "C Compiler: Working with Primitive Types and Inspecting Binaries",
 			"dependsOn": "STEMgraph:AND-302c98a7-81f2e303-OR-718193ef-99787eda"
 		},
 		{
@@ -84,19 +87,23 @@
 		},
 		{
 			"@id": "STEMgraph:302c98a7-cbea-435c-ada2-bbf7538429a2",
-			"@type": "Exercise"
+			"@type": "Exercise",
+			"label": "C Compiler Basics"
 		},
 		{
 			"@id": "STEMgraph:81f2e303-d35c-4857-9cb7-190e3c5372b0",
-			"@type": "Exercise"
+			"@type": "Exercise",
+			"label": "Comparing Object Files from GAS and GCC"
 		},
 		{
 			"@id": "STEMgraph:718193ef-11a1-408d-af23-4b10c24d490d",
-			"@type": "Exercise"
+			"@type": "Exercise",
+			"label": "Introduction to GAS on Linux"
 		},
 		{
 			"@id": "STEMgraph:99787eda-617a-4a68-b9a4-d60ec5c5c303",
-			"@type": "Exercise"
+			"@type": "Exercise",
+			"label": "Introduction to NASM on Linux"
 		}
 	]
 }
