@@ -10,7 +10,7 @@ Parses all STEMgraph repositories and generates a JSON-LD dependency graph.
 ## Usage
 
 ```bash
-./is0n-parser.sh
+./ison-parser.sh
 ```
 
 Outputs: `jsonld.json`
@@ -27,3 +27,4 @@ Outputs: `jsonld.json`
 
 - Mermaid diagram generation
 - Other visualization formats
+
