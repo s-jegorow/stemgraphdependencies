@@ -25,6 +25,7 @@ Outputs: `jsonld.json`
 
 ## Future plans
 - fix the issues with the repos and remove the workarounds in the parser
+- use stderror and stdout intead of file-output
 - add labels, keywords and titles to the nodes
 - Mermaid diagram generation
 - Other visualization formats
